@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 // Images
 import logo from "./assets/images/AlcalasRenovationsLogo.png";
@@ -40,7 +40,7 @@ const projects = [
 export default function App() {
 	const [openService, setOpenService] = useState(null);
 
-	const toggleService = (name) => {
+	const toggleService = (name: string) => {
 		setOpenService(openService === name ? null : name);
 	};
 

@@ -346,7 +346,7 @@ section {
 
 	/* Responsive social icons */
 	.contact .social-icons {
-		gap: 5px;
+		gap: 10px;
 	}
 
   .contact .social-icons a {

@@ -52,12 +52,12 @@ export default function App() {
 
 				<nav className="nav">
 					<a>Home</a>
-					<a>Contact</a>
+					<a href="./Contact.tsx">Contact</a>
 				</nav>
 			</header>
 
 			{/* ABOUT */}
-			<section className="bento-card about-section">
+			<section className="about-section">
 				<h2>About Us</h2>
 				<div className="about-content">
 					<img src={project2} alt="About Us" className="about-image" />
@@ -74,7 +74,7 @@ export default function App() {
 			</section>
 
 			{/* PROJECTS */}
-			<section className="bento-card">
+			<section>
 				<h2>Scroll through our work</h2>
 				<div className="gallery-wrapper">
 					<div className="projects-gallery">
@@ -93,7 +93,7 @@ export default function App() {
 			</section>
 
 			{/* SERVICES */}
-			<section className="bento-card services">
+			<section>
 				<h2>Top Services</h2>
 
 				{/* CARPENTRY */}
@@ -290,7 +290,6 @@ export default function App() {
 
 			{/* CONTACT */}
 			<section className="contact">
-				<h2>Contact</h2>
 				<p>Phone: (940) 206-3588</p>
 				<p>Email: alcalasrenovations@gmail.com</p>
 

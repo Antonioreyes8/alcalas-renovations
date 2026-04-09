@@ -38,7 +38,7 @@ const projects = [
 ];
 
 export default function App() {
-	const [openService, setOpenService] = useState(null);
+	const [openService, setOpenService] = useState<string | null>(null);
 
 	const toggleService = (name: string) => {
 		setOpenService(openService === name ? null : name);

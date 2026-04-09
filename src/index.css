@@ -76,7 +76,7 @@ p,
 
 a {
 	font-family: "NeueHelvena", sans-serif;
-	font-weight: 400;
+	font-weight: 700;
 	cursor: pointer;
 }
 
@@ -113,7 +113,7 @@ section {
 .nav {
 	display: flex;
 	gap: 20px;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	flex-wrap: wrap;
 	justify-content: center;
 }
@@ -121,10 +121,12 @@ section {
 .nav a {
 	color: black;
 	text-decoration: none;
+	padding: 6px 12px;
 }
 
-.nav a :hover {
+.nav a:hover {
 	text-decoration: underline;
+	text-decoration-color: #ef1f15;
 }
 
 /* ========================
@@ -249,6 +251,7 @@ section {
 	display: flex;
 	align-items: center;
 	gap: 50px;
+  margin-top: 30px;
 }
 
 .about-image-wrapper {
@@ -267,6 +270,10 @@ section {
 	transform-origin: center; /* keeps it centered */
 
 	transition: transform 0.3s ease;
+}
+
+.about-section {
+  border-top: #ef1f15 3px solid;
 }
 
 /* ========================
@@ -311,6 +318,11 @@ section {
 		font-size: 1rem;
 	}
 
+	.service-content p {
+		font-size: 1.5rem;
+		line-height: 1.4;
+	}
+
 	.container {
 		padding: 15px;
 	}
@@ -323,7 +335,7 @@ section {
 		margin-bottom: 20px;
 	}
 	.nav {
-		font-size: 1rem;
+		font-size: 2rem;
 		gap: 10px;
 	}
 
@@ -352,7 +364,7 @@ section {
 	.about-image-wrapper {
 		width: 300px;
 		height: 350px;
-    margin-bottom: 15px;
+		margin-bottom: 15px;
 	}
 
 	/* Responsive social icons */

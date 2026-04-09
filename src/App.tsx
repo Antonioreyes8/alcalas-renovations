@@ -110,7 +110,7 @@ export default function App() {
 						onClick={() => toggleService("carpentry")}
 					>
 						<FontAwesomeIcon icon={faHammer} />
-						<h3>Carpentry</h3>
+						<h4>Carpentry</h4>
 						<FontAwesomeIcon
 							icon={faChevronDown}
 							className={openService === "carpentry" ? "rotate" : ""}
@@ -142,7 +142,7 @@ export default function App() {
 						onClick={() => toggleService("painting")}
 					>
 						<FontAwesomeIcon icon={faPaintRoller} />
-						<h3>Painting</h3>
+						<h4>Painting</h4>
 						<FontAwesomeIcon
 							icon={faChevronDown}
 							className={openService === "painting" ? "rotate" : ""}
@@ -171,7 +171,7 @@ export default function App() {
 						onClick={() => toggleService("remodeling")}
 					>
 						<FontAwesomeIcon icon={faCouch} />
-						<h3>Remodeling</h3>
+						<h4>Remodeling</h4>
 						<FontAwesomeIcon
 							icon={faChevronDown}
 							className={openService === "remodeling" ? "rotate" : ""}
@@ -199,7 +199,7 @@ export default function App() {
 						onClick={() => toggleService("flooring")}
 					>
 						<FontAwesomeIcon icon={faLayerGroup} />
-						<h3>Flooring</h3>
+						<h4>Flooring</h4>
 						<FontAwesomeIcon
 							icon={faChevronDown}
 							className={openService === "flooring" ? "rotate" : ""}
@@ -223,7 +223,7 @@ export default function App() {
 						onClick={() => toggleService("drywall")}
 					>
 						<FontAwesomeIcon icon={faWrench} />
-						<h3>Drywall</h3>
+						<h4>Drywall</h4>
 						<FontAwesomeIcon
 							icon={faChevronDown}
 							className={openService === "drywall" ? "rotate" : ""}
@@ -248,7 +248,7 @@ export default function App() {
 						onClick={() => toggleService("fencing")}
 					>
 						<FontAwesomeIcon icon={faToolbox} />
-						<h3>Fencing</h3>
+						<h4>Fencing</h4>
 						<FontAwesomeIcon
 							icon={faChevronDown}
 							className={openService === "fencing" ? "rotate" : ""}
@@ -273,7 +273,7 @@ export default function App() {
 						onClick={() => toggleService("additional")}
 					>
 						<FontAwesomeIcon icon={faPlus} />
-						<h3>Additional Services</h3>
+						<h4>Additional Services</h4>
 						<FontAwesomeIcon
 							icon={faChevronDown}
 							className={openService === "additional" ? "rotate" : ""}

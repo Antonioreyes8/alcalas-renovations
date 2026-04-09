@@ -44,7 +44,8 @@ body {
 ======================== */
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	font-family: "NeueHelvena", sans-serif;
 	font-weight: 700;
 	margin-bottom: 10px;
@@ -55,10 +56,14 @@ h1 {
 }
 h2 {
 	font-size: 4rem;
-	text-decoration: underline;
+	text-align: center;
 }
 h3 {
 	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2rem;
 }
 
 p,
@@ -86,6 +91,8 @@ a {
 
 section {
 	margin: 60px 0;
+	padding-bottom: 40px;
+	border-bottom: 3px solid #ef1f15;
 }
 
 /* ========================
@@ -93,9 +100,8 @@ section {
 ======================== */
 .header {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
 	margin-bottom: 50px;
 }
 
@@ -161,17 +167,19 @@ section {
 }
 
 .service ul {
-  font-family: "NeueHelvena", sans-serif;
+	font-family: "NeueHelvena", sans-serif;
 	font-weight: 300;
 	list-style: none;
 	padding-left: 0;
-  font-size: 1.5rem;
-  letter-spacing: 0.5px;
+	font-size: 1.5rem;
+	letter-spacing: 0.5px;
 }
 
 .service {
 	border-top: 1px solid rgba(0, 0, 0, 0.08);
 	padding: 10px 0;
+	border-left: 4px solid transparent;
+	transition: border 0.2s ease;
 }
 
 .service-header {
@@ -184,6 +192,10 @@ section {
 	transition:
 		background 0.2s ease,
 		transform 0.1s ease;
+}
+
+.service:hover {
+	border-left: 4px solid #ef1f15;
 }
 
 .service-header:hover {
@@ -236,15 +248,25 @@ section {
 .about-section .about-content {
 	display: flex;
 	align-items: center;
-	gap: 100px;
+	gap: 50px;
 }
 
-.about-section .about-image {
-	width: 300px;
-	height: 300px;
-	object-fit: cover;
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+.about-image-wrapper {
+	width: 400px;
+	height: 400px;
+	overflow: hidden; /* 🔥 key for zoom */
 	flex-shrink: 0;
+}
+
+.about-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+	transform: scale(1.4); /* 🔥 THIS is the zoom */
+	transform-origin: center; /* keeps it centered */
+
+	transition: transform 0.3s ease;
 }
 
 /* ========================
@@ -326,10 +348,11 @@ section {
 		text-align: center;
 		gap: 20px;
 	}
-	.about-section .about-image {
+
+	.about-image-wrapper {
 		width: 300px;
 		height: 350px;
-		margin-bottom: 15px;
+    margin-bottom: 15px;
 	}
 
 	/* Responsive social icons */

@@ -10,6 +10,9 @@ import project5 from "./assets/images/image5.jpeg";
 import project6 from "./assets/images/image6.jpeg";
 import project7 from "./assets/images/image7.jpeg";
 import project8 from "./assets/images/image8.jpeg";
+import project9 from "./assets/images/image9.jpeg";
+import project10 from "./assets/images/image10.jpeg";
+import project11 from "./assets/images/image11.jpeg";
 
 // Font Awesome Solid Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -35,6 +38,9 @@ const projects = [
 	project6,
 	project7,
 	project8,
+	project9,
+	project10,
+	project11,
 ];
 
 export default function App() {
@@ -58,10 +64,8 @@ export default function App() {
 
 			{/* ABOUT */}
 			<section className="about-section">
-				<h2>About Us</h2>
 				<div className="about-content">
-					<img src={project2} alt="About Us" className="about-image" />
-					<p>
+					<h4>
 						Based in the DFW area, our services are prominent throughout Denton,
 						where most of our projects are completed.
 						<br />
@@ -69,7 +73,10 @@ export default function App() {
 						With over 25 years of experience in the renovation industry, we take
 						pride in delivering high-quality work with meticulous attention to
 						detail and reliability.
-					</p>
+					</h4>
+					<div className="about-image-wrapper">
+						<img src={project2} alt="About Us" className="about-image" />
+					</div>
 				</div>
 			</section>
 
@@ -289,7 +296,7 @@ export default function App() {
 			</section>
 
 			{/* CONTACT */}
-			<section className="contact">
+			<div className="contact">
 				<p>Phone: (940) 206-3588</p>
 				<p>Email: alcalasrenovations@gmail.com</p>
 
@@ -312,7 +319,7 @@ export default function App() {
 						<FontAwesomeIcon icon={faFacebook} />
 					</a>
 				</div>
-			</section>
+			</div>
 		</div>
 	);
 }

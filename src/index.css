@@ -371,6 +371,10 @@ section {
 		gap: 10px;
 	}
 
+  .nav a {
+    font-size: 1.5rem;
+  }
+
 	.projects-gallery {
 		gap: 12px;
 		padding: 10px 0;

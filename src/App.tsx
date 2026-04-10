@@ -63,8 +63,10 @@ export default function App() {
 				</nav>
 			</header>
 
+      <div className="divider"></div>
 			{/* ABOUT */}
 			<section className="about-section">
+        <h2>ABOUT US</h2>
 				<div className="about-content">
 					<h4>
 						Based in the DFW area, our services are prominent throughout Denton,
@@ -75,15 +77,26 @@ export default function App() {
 						pride in delivering high-quality work with meticulous attention to
 						detail and reliability.
 					</h4>
-					<div className="about-image-wrapper">
-						<img src={project2} alt="About Us" className="about-image" />
-					</div>
+          <div className="about-highlights-wrapper">
+            <div className="about-highlight">
+              <h4>+25 years</h4>
+              <p>of experience</p>
+            </div>
+            <div className="about-highlight">
+              <h4>Dallas - Fort Worth</h4>
+              <p>and surrounding areas</p>
+            </div>
+            <div className="about-highlight">
+              <h4>Quality Work</h4>
+              <p>with attention to detail</p>
+            </div>
+          </div>
 				</div>
 			</section>
-
+      <div className="divider"></div>
 			{/* PROJECTS */}
 			<section>
-				<h2>Scroll through our work</h2>
+				<h2>OUR WORK</h2>
 				<div className="gallery-wrapper">
 					<div className="projects-gallery">
 						{projects.map((img, index) => (
@@ -99,10 +112,10 @@ export default function App() {
 					<div className="gallery-fade gallery-fade--right" />
 				</div>
 			</section>
-
+      <div className="divider"></div>
 			{/* SERVICES */}
 			<section>
-				<h2>Top Services</h2>
+				<h2>TOP SERVICES</h2>
 
 				{/* CARPENTRY */}
 				<div className="service">
@@ -352,9 +365,11 @@ export default function App() {
 					)}
 				</div>
 			</section>
-
+      <div className="divider"></div>
 			{/* CONTACT */}
-			<div className="contact">
+			<div className="footer">
+        <h3>ALCALA'S RENOVATIONS</h3>
+        <p>Dallas - Fort Worth</p>
 				<p>Phone: (940) 206-3588</p>
 				<p>Email: alcalasrenovations@gmail.com</p>
 

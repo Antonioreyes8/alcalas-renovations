@@ -32,17 +32,20 @@ import {
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 const projects = [
-	project1,
-  project2,
-	project3,
-	project4,
-	project5,
-	project6,
-	project7,
-	project8,
-	project9,
-	project10,
-	project11,
+	{ img: project1, text: "Fence build + two tone stain" },
+	{ img: project2, text: "Custom cabinetry installation" },
+	{ img: project3, text: "Black accent wall" },
+	{ img: project4, text: "Exterior painting" },
+	{ img: project5, text: "Fully custom accent piece to bring the space to life" },
+	{ img: project6, text: "Accent walls for a clinic in Denton, Texas" },
+	{ img: project7, text: "Fully custom carpentry" },
+	{ img: project8, text: "Custom bunk beds" },
+	{ img: project9, text: "Built-in shelving and a clean arched design to bring everything together" },
+	{ img: project10, text: "New windows installed all around" },
+	{
+		img: project11,
+		text: "Custom wine station built to stand out.",
+	},
 ];
 
 export default function App() {
@@ -64,10 +67,10 @@ export default function App() {
 				</nav>
 			</header>
 
-      <div className="divider"></div>
+			<div className="divider"></div>
 			{/* ABOUT */}
 			<section className="about-section">
-        <h2>ABOUT US</h2>
+				<h2>ABOUT US</h2>
 				<div className="about-content">
 					<h4>
 						Based in the DFW area, our services are prominent throughout Denton,
@@ -78,46 +81,54 @@ export default function App() {
 						pride in delivering high-quality work with meticulous attention to
 						detail and reliability.
 					</h4>
-          <div className="about-highlights-wrapper">
-            <div className="about-highlight">
-              <h4>+25 years</h4>
-              <p>of experience</p>
-            </div>
-            <div className="about-highlight">
-              <h4>Dallas - Fort Worth</h4>
-              <p>and surrounding areas</p>
-            </div>
-            <div className="about-highlight">
-              <h4>Quality Work</h4>
-              <p>with attention to detail</p>
-            </div>
-          </div>
+					<div className="about-highlights-wrapper">
+						<div className="about-highlight">
+							<h4>+25 years</h4>
+							<p>of experience</p>
+						</div>
+						<div className="about-highlight">
+							<h4>Dallas - Fort Worth</h4>
+							<p>and surrounding areas</p>
+						</div>
+						<div className="about-highlight">
+							<h4>Quality Work</h4>
+							<p>with attention to detail</p>
+						</div>
+					</div>
 				</div>
 			</section>
-      <div className="divider"></div>
+			<div className="divider"></div>
 			{/* PROJECTS */}
 			<section>
 				<h2>OUR WORK</h2>
+				<h3>Scroll through our projects</h3>
 				<div className="gallery-wrapper">
 					<div className="projects-gallery">
-						{projects.map((img, index) => (
-							<img
-								key={index}
-								src={img}
-								alt={`Project ${index + 1}`}
-								loading="lazy"
-							/>
+						{projects.map((project, index) => (
+							<div className="project-card" key={index}>
+								<img src={project.img} alt={`Project ${index + 1}`} />
+
+								<div className="project-overlay">
+									<p>{project.text}</p>
+								</div>
+							</div>
 						))}
 					</div>
-					<div className="gallery-fade gallery-fade--left" />
-					<div className="gallery-fade gallery-fade--right" />
+					<p>
+						Each image represents our commitment to quality and craftsmanship in
+						every project we undertake.
+					</p>
 				</div>
 			</section>
-      <div className="divider"></div>
+			<div className="divider"></div>
 			{/* SERVICES */}
 			<section>
 				<h2>TOP SERVICES</h2>
-
+				<p>
+					From fully custom carpentry, to exterior painting, to accent walls. We
+					are committed to delivering high-quality craftsmanship on every
+					project.
+				</p>
 				{/* CARPENTRY */}
 				<div className="service">
 					<div
@@ -366,11 +377,11 @@ export default function App() {
 					)}
 				</div>
 			</section>
-      <div className="divider"></div>
+			<div className="divider"></div>
 			{/* CONTACT */}
 			<div className="footer">
-        <h3>ALCALA'S RENOVATIONS</h3>
-        <p>Dallas - Fort Worth</p>
+				<h3>ALCALA'S RENOVATIONS</h3>
+				<p>Dallas - Fort Worth</p>
 				<p>Phone: (940) 206-3588</p>
 				<p>Email: alcalasrenovations@gmail.com</p>
 

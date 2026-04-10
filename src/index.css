@@ -47,16 +47,18 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: "NeueHelvena", sans-serif;
-	font-weight: 700;
+	font-family: "bebas-neue", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	margin-bottom: 10px;
 }
 
 h1 {
-	font-size: 5rem;
+	font-size: 3.5rem;
 }
+
 h2 {
-	font-size: 4rem;
+	font-size: 2.8rem;
 	background-color: #b03728;
 	color: white;
 	display: inline-block;
@@ -64,24 +66,26 @@ h2 {
 	border-radius: 10px;
 }
 h3 {
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 h4 {
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 }
 
 p,
 .services li {
 	font-family: "NeueHelvena", sans-serif;
 	font-weight: 300;
-	letter-spacing: 0.5px;
-	font-size: 2rem;
+	letter-spacing: 0.4px;
+	font-size: 1.1rem;
+	line-height: 1.6;
 }
 
 a {
-	font-family: "NeueHelvena", sans-serif;
-	font-weight: 700;
+	font-family: "bebas-neue", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	cursor: pointer;
 }
 
@@ -93,10 +97,10 @@ a {
 }
 
 section {
-	margin: 60px 60px;
+	margin: 60px 180px;
 	padding-bottom: 40px;
 	background-color: white;
-	padding: 40px;
+	padding: 60px;
 	border-radius: 20px;
 }
 
@@ -116,7 +120,7 @@ section {
 }
 
 .logo {
-	width: 350px;
+	width: 400px;
 	margin-bottom: 30px;
 }
 
@@ -219,7 +223,7 @@ section {
 	font-weight: 300;
 	list-style: none;
 	padding-left: 0;
-	font-size: 1.5rem;
+	font-size: 1.125rem;
 	letter-spacing: 0.5px;
 }
 
@@ -292,7 +296,7 @@ section {
 .service-item span {
 	font-family: "NeueHelvena", sans-serif;
 	font-weight: 300;
-	font-size: 2rem;
+	font-size: 1.125rem;
 	letter-spacing: 0.5px;
 }
 
@@ -382,7 +386,7 @@ section {
 }
 
 .footer .social-icons a {
-	font-size: 4rem;
+	font-size: 3rem;
 	color: white;
 	transition: color 0.2s ease;
 }
@@ -442,7 +446,7 @@ section {
 	}
 
 	.project-card {
-    width: auto;
+		width: auto;
 		height: auto;
 	}
 

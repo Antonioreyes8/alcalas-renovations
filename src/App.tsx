@@ -25,6 +25,7 @@ import {
 	faToolbox,
 	faPlus,
 	faChevronDown,
+	faCheck,
 } from "@fortawesome/free-solid-svg-icons";
 
 // Font Awesome Brand Icons
@@ -119,14 +120,32 @@ export default function App() {
 
 					{openService === "carpentry" && (
 						<div className="service-content">
-							<ul>
-								<li>Accent walls</li>
-								<li>Baseboard installation</li>
-								<li>Trim work</li>
-								<li>Custom bunk beds</li>
-								<li>Cabinets</li>
-								<li>And more</li>
-							</ul>
+							<div className="service-list">
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Accent walls</span>
+								</div>
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Baseboard installation</span>
+								</div>
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Trim work</span>
+								</div>
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Custom bunk beds</span>
+								</div>
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Cabinets</span>
+								</div>
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>And more</span>
+								</div>
+							</div>
 							<p>
 								Custom woodwork and detailed carpentry built to match your
 								home’s style and needs.
@@ -151,12 +170,24 @@ export default function App() {
 
 					{openService === "painting" && (
 						<div className="service-content">
-							<ul>
-								<li>Interior painting</li>
-								<li>Exterior painting</li>
-								<li>Cabinet painting</li>
-								<li>Staining</li>
-							</ul>
+							<div className="service-list">
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Interior painting</span>
+								</div>
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Exterior painting</span>
+								</div>
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Cabinet painting</span>
+								</div>
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Staining</span>
+								</div>
+							</div>
 							<p>
 								Clean, professional finishes that refresh and protect your home.
 							</p>
@@ -180,10 +211,16 @@ export default function App() {
 
 					{openService === "remodeling" && (
 						<div className="service-content">
-							<ul>
-								<li>Bathroom remodels</li>
-								<li>Kitchen remodels</li>
-							</ul>
+							<div className="service-list">
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Bathroom remodels</span>
+								</div>
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Kitchen remodels</span>
+								</div>
+							</div>
 							<p>
 								Full remodels designed to improve functionality and increase
 								home value.
@@ -208,9 +245,12 @@ export default function App() {
 
 					{openService === "flooring" && (
 						<div className="service-content">
-							<ul>
-								<li>Floor installation</li>
-							</ul>
+							<div className="service-list">
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Floor installation</span>
+								</div>
+							</div>
 							<p>Durable, high-quality flooring installed with precision.</p>
 						</div>
 					)}
@@ -232,10 +272,16 @@ export default function App() {
 
 					{openService === "drywall" && (
 						<div className="service-content">
-							<ul>
-								<li>Drywall repair</li>
-								<li>Drywall installation</li>
-							</ul>
+							<div className="service-list">
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Drywall repair</span>
+								</div>
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Drywall installation</span>
+								</div>
+							</div>
 							<p>Smooth, seamless walls ready for paint and finishing.</p>
 						</div>
 					)}
@@ -257,10 +303,16 @@ export default function App() {
 
 					{openService === "fencing" && (
 						<div className="service-content">
-							<ul>
-								<li>Fence build</li>
-								<li>Fence repair</li>
-							</ul>
+							<div className="service-list">
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Fence build</span>
+								</div>
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Fence repair</span>
+								</div>
+							</div>
 							<p>Strong, reliable fencing for privacy and security.</p>
 						</div>
 					)}
@@ -282,10 +334,16 @@ export default function App() {
 
 					{openService === "additional" && (
 						<div className="service-content">
-							<ul>
-								<li>Electrical work</li>
-								<li>Welding</li>
-							</ul>
+							<div className="service-list">
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Electrical work</span>
+								</div>
+								<div className="service-item">
+									<FontAwesomeIcon icon={faCheck} />
+									<span>Welding</span>
+								</div>
+							</div>
 							<p>
 								Additional skilled services to handle a wide range of project
 								needs.

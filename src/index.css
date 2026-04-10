@@ -63,7 +63,7 @@ h3 {
 }
 
 h4 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 p,
@@ -71,7 +71,7 @@ p,
 	font-family: "NeueHelvena", sans-serif;
 	font-weight: 300;
 	letter-spacing: 0.5px;
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 a {
@@ -113,12 +113,12 @@ section {
 .nav {
 	display: flex;
 	gap: 20px;
-	font-size: 2rem;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
 .nav a {
+	font-size: 1.5rem;
 	color: black;
 	text-decoration: none;
 	padding: 6px 12px;
@@ -207,7 +207,7 @@ section {
 	transform: scale(0.98);
 }
 
-.service-header h3 {
+.service-header h4 {
 	flex: 1;
 	margin: 0;
 }
@@ -226,6 +226,30 @@ section {
 
 .service-content p {
 	margin-top: 10px;
+}
+
+.service-list {
+	margin-top: 10px;
+}
+
+.service-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.service-item svg {
+	color: #000;
+	margin-right: 10px;
+	font-size: 1.2rem;
+	flex-shrink: 0;
+}
+
+.service-item span {
+	font-family: "NeueHelvena", sans-serif;
+	font-weight: 300;
+	font-size: 2rem;
+	letter-spacing: 0.5px;
 }
 
 .rotate {
@@ -251,13 +275,13 @@ section {
 	display: flex;
 	align-items: center;
 	gap: 50px;
-  margin-top: 30px;
+	margin-top: 30px;
 }
 
 .about-image-wrapper {
 	width: 400px;
 	height: 400px;
-	overflow: hidden; /* 🔥 key for zoom */
+	overflow: hidden;
 	flex-shrink: 0;
 }
 
@@ -273,7 +297,7 @@ section {
 }
 
 .about-section {
-  border-top: #ef1f15 3px solid;
+	border-top: #ef1f15 3px solid;
 }
 
 /* ========================
@@ -313,15 +337,23 @@ section {
 		font-size: 1.5rem;
 	}
 
+  h4 {
+    font-size: 1.5rem;
+  }
+
 	p,
 	.services li {
 		font-size: 1rem;
 	}
 
 	.service-content p {
-		font-size: 1.5rem;
+		font-size: 1rem;
 		line-height: 1.4;
 	}
+
+  .service-item span {
+    font-size: 1rem;
+  }
 
 	.container {
 		padding: 15px;

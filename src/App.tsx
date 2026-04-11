@@ -16,6 +16,8 @@ import project9 from "./assets/images/image9.jpeg";
 import project10 from "./assets/images/image10.jpeg";
 import project11 from "./assets/images/image11.jpeg";
 import project12 from "./assets/images/image12.jpeg";
+import project13 from "./assets/images/image13.jpeg";
+import project14 from "./assets/images/image14.jpeg";
 
 // Font Awesome Solid Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -35,29 +37,63 @@ import {
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 const projects = [
-	{ img: project1, text: "Fence build + two tone stain" },
-	{ img: project2, text: "Custom cabinetry installation" },
-	{ img: project3, text: "Black accent wall" },
-	{ img: project4, text: "Exterior painting" },
-	{ img: project5, text: "Custom accent piece to bring the space to life" },
-	{ img: project6, text: "Accent walls for a clinic in Denton, Texas" },
-	{ img: project7, text: "Fully custom carpentry" },
-	{ img: project8, text: "Custom bunk beds" },
+	{
+		img: project1,
+		text: "This project highlights our expertise in custom wainscoting, featuring perfectly scaled recessed arches and integrated electrical for statement lighting.",
+	},
+	{
+		img: project2,
+		text: "This custom build featured floor-to-ceiling U-shaped shelving, precision-engineered to provide clean lines and heavy-duty durability",
+	},
+	{
+		img: project3,
+		text: "We created this striking, floor-to-ceiling black fluted wood accent wall to serve as the sophisticated anchor for a modern media and fireplace center.",
+	},
+	{
+		img: project4,
+		text: "This project highlights our team in action, providing professional exterior updates to a stunning Tudor-inspired residence.",
+	},
+	{
+		img: project5,
+		text: "Featured a custom tall box-molding paneling and bespoke arched window trim.",
+	},
+	{
+		img: project6,
+		text: "This project for a clinic in Denton featured a large-scale diamond lattice accent wall, meticulously measured and installed to create depth and visual interest.",
+	},
+	{
+		img: project7,
+		text: "Hallways are often overlooked, but we see them as an opportunity for architectural interest.",
+	},
+	{
+		img: project8,
+		text: "Our team designed and installed this integrated triple tier bunk bed system to fit the exact dimensions of the room, ensuring a seamless look that furniture from a store simply can’t provide.",
+	},
 	{
 		img: project9,
-		text: "Built-in shelving and a clean arched design to bring everything together",
+		text: "This project featured a custom-framed arched alcove drenched in a rich, monochromatic burgundy.",
 	},
-	{ img: project10, text: "New windows installed all around" },
+	{
+		img: project10,
+		text: "We completely revitalized the facade of this grand estate by installing high-efficiency, black-frame Pella windows.",
+	},
 	{
 		img: project11,
-		text: "Custom wine station built to stand out.",
+		text: "From the oversized crown molding that anchors the unit to the ceiling, to the precision-fit lower drawers with luxury brass pulls, every element was built to spec.",
 	},
 	{
 		img: project12,
-		text: "Fully remodeled kitchen",
+		text: "From the installation of ornate crown molding to the precision-fit cabinetry and updated recessed lighting.",
+	},
+	{
+		img: project13,
+		text: "We brought this open-concept kitchen to life by blending warm natural wood tones with a stunning full-height brick accent wall.",
+	},
+	{
+		img: project14,
+		text: "By pairing deep charcoal horizontal slats with rich, warm-toned structural timbers, we created a striking contrast that feels more like a piece of art than a fence.",
 	},
 ];
-
 export default function App() {
 	const [openService, setOpenService] = useState<string | null>(null);
 

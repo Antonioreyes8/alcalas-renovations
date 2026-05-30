@@ -177,7 +177,6 @@ export default function App() {
 												<div className="project-overlay">
 													<div className="project-overlay-content">
 														<h4>{project.type}</h4>
-														<p>{project.text}</p>
 														<ul className="project-features">
 															{project.features.map((feature, featureIndex) => (
 																<li key={featureIndex}>{feature}</li>

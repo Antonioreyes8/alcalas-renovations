@@ -127,7 +127,7 @@ export default function App() {
 				element={
 					<div>
 						<Header />
-                        <div className="divider"></div>
+						<div className="divider"></div>
 						<div className="aboutcontainer">
 							{/* ABOUT */}
 							<section className="about-section">
@@ -158,8 +158,8 @@ export default function App() {
 									</div>
 								</div>
 							</section>
-                        </div>
-                        <div className="container">
+						</div>
+						<div className="container">
 							<div className="divider"></div>
 							{/* PROJECTS */}
 							<section>
@@ -238,8 +238,8 @@ export default function App() {
 													</div>
 												</div>
 												<h5>
-													Custom woodwork and detailed carpentry built to match
-													your home's style and needs.
+													From custom built-ins to precise trim work, we deliver
+													quality craftsmanship that elevates your living space.
 												</h5>
 											</div>
 										</div>
@@ -306,7 +306,10 @@ export default function App() {
 													<span>Laminate & vinyl</span>
 												</div>
 											</div>
-											<h5>Durable flooring solutions installed with care.</h5>
+											<h5>
+												Expert installation of premium flooring options built to
+												withstand daily life.
+											</h5>
 										</div>
 									)}
 								</div>
@@ -336,7 +339,10 @@ export default function App() {
 													<span>Texturing & finishing</span>
 												</div>
 											</div>
-											<h5>Seamless drywall work and professional finishes.</h5>
+											<h5>
+												Professional repairs, seamless texturing, and clean
+												finishes for a flawless look.
+											</h5>
 										</div>
 									)}
 								</div>
@@ -368,9 +374,8 @@ export default function App() {
 													</div>
 												</div>
 												<h5>
-													By pairing deep charcoal horizontal slats with rich,
-													warm-toned structural timbers, we created a striking
-													fence that reads like architectural art.
+													High-quality perimeter solutions combining structural
+													durability with clean, modern aesthetics.
 												</h5>
 											</div>
 										</div>

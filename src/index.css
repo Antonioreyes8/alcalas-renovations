@@ -197,10 +197,6 @@ section {
 	transition: transform 0.3s ease;
 }
 
-.nav a:hover {
-	color: #ffffff;
-}
-
 .nav a:hover::after {
 	transform: scaleX(1);
 	transform-origin: left;

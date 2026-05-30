@@ -592,7 +592,7 @@ section {
 	}
 
 	.nav {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		gap: 12px;
 		position: static;
 		align-self: center;
@@ -605,7 +605,7 @@ section {
 	}
 
 	.nav a {
-		font-size: 1.1rem;
+		font-size: 2rem;
 		padding: 6px 10px;
 		white-space: nowrap;
 	}

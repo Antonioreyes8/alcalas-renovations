@@ -33,19 +33,16 @@ const projects = [
 	{
 		img: project1,
 		type: "Interior Carpentry",
-		text: "This project highlights our expertise in custom wainscoting, featuring perfectly scaled recessed arches and integrated electrical for statement lighting.",
 		features: ["Custom built-ins", "Painted millwork", "Precision trim"],
 	},
 	{
 		img: project2,
 		type: "Built in shelving",
-		text: "This custom build featured floor-to-ceiling U-shaped shelving, precision-engineered to provide clean lines and heavy-duty durability",
 		features: ["Surface prep", "Color consultation", "Weatherproof finish"],
 	},
 	{
 		img: project3,
 		type: "Accent Wall",
-		text: "We created this striking, floor-to-ceiling black fluted wood accent wall to serve as the sophisticated anchor for a modern media and fireplace center.",
 		features: [
 			"Fluted wood paneling",
 			"Custom media focal point",
@@ -55,19 +52,16 @@ const projects = [
 	{
 		img: project4,
 		type: "Exterior Renovation",
-		text: "This project highlights our team in action, providing professional exterior updates to a stunning Tudor-inspired residence.",
 		features: ["Exterior updates", "Tudor-style finish", "Curb appeal boost"],
 	},
 	{
 		img: project5,
 		type: "Trim & Millwork",
-		text: "Featured a custom tall box-molding paneling and bespoke arched window trim.",
 		features: ["Box-molding paneling", "Arched trim", "Custom detail"],
 	},
 	{
 		img: project6,
 		type: "Feature Wall",
-		text: "This project for a clinic in Denton featured a large-scale diamond lattice accent wall, meticulously measured and installed to create depth and visual interest.",
 		features: [
 			"Diamond lattice pattern",
 			"Precision installation",
@@ -77,55 +71,46 @@ const projects = [
 	{
 		img: project7,
 		type: "Hallway Accent",
-		text: "Hallways are often overlooked, but we see them as an opportunity for architectural interest.",
 		features: ["Architectural detail", "Feature lighting", "Custom trim"],
 	},
 	{
 		img: project8,
 		type: "Custom Bedrooms",
-		text: "Our team designed and installed this integrated triple tier bunk bed system to fit the exact dimensions of the room, ensuring a seamless look that furniture from a store simply can’t provide.",
 		features: ["Triple-tier bunk bed", "Built-in storage", "Room-specific fit"],
 	},
 	{
 		img: project9,
 		type: "Accent Alcove",
-		text: "This project featured a custom-framed arched alcove drenched in a rich, monochromatic burgundy.",
 		features: ["Arched framing", "Monochromatic finish", "Custom niche"],
 	},
 	{
 		img: project10,
 		type: "Window Upgrade",
-		text: "We completely revitalized the facade of this grand estate by installing high-efficiency, black-frame Pella windows.",
 		features: ["Black-frame windows", "Energy efficiency", "Curb appeal"],
 	},
 	{
 		img: project11,
 		type: "Custom Millwork",
-		text: "From the oversized crown molding that anchors the unit to the ceiling, to the precision-fit lower drawers with luxury brass pulls, every element was built to spec.",
 		features: ["Crown molding", "Custom drawers", "Luxury finishes"],
 	},
 	{
 		img: project12,
 		type: "Classic Remodel",
-		text: "From the installation of ornate crown molding to the precision-fit cabinetry and updated recessed lighting, this remodel balanced classic detail with modern function.",
 		features: ["Ornate molding", "Cabinetry", "Recessed lighting"],
 	},
 	{
 		img: project13,
 		type: "Kitchen Renovation",
-		text: "We brought this open-concept kitchen to life by blending warm natural wood tones with a stunning full-height brick accent wall and custom millwork.",
 		features: ["Open-concept layout", "Brick accent wall", "Custom millwork"],
 	},
 	{
 		img: project14,
 		type: "Architectural Fence",
-		text: "By pairing deep charcoal horizontal slats with rich, warm-toned structural timbers, we created a striking fence that reads like architectural art.",
 		features: ["Horizontal slats", "Structural timbers", "Artful design"],
 	},
 	{
 		img: project15,
 		type: "Fence Staining",
-		text: "This project featured staining a wood fence to a rich, warm tone that complements the home’s exterior and surrounding landscaping.",
 		features: ["Rich stain", "Wood protection", "Exterior enhancement"],
 	},
 ];

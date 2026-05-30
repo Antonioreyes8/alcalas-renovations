@@ -209,7 +209,7 @@ export default function App() {
 									</div>
 
 									{openService === "carpentry" && (
-										<div className="service-content service-split">
+										<div className="service-content">
 											<div className="service-left">
 												<div className="service-list">
 													<div className="service-item">
@@ -260,7 +260,7 @@ export default function App() {
 										/>
 									</div>
 									{openService === "remodeling" && (
-										<div className="service-content service-split">
+										<div className="service-content">
 											<div className="service-left">
 												<div className="service-list">
 													<div className="service-item">
@@ -355,7 +355,7 @@ export default function App() {
 										/>
 									</div>
 									{openService === "fencing" && (
-										<div className="service-content service-split">
+										<div className="service-content">
 											<div className="service-left">
 												<div className="service-list">
 													<div className="service-item">

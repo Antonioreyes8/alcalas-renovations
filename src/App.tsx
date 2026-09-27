@@ -261,14 +261,6 @@ export default function App() {
 														</div>
 														<div className="service-item">
 															<FontAwesomeIcon icon={faCheck} />
-															<span>Crown molding</span>
-														</div>
-														<div className="service-item">
-															<FontAwesomeIcon icon={faCheck} />
-															<span>Door and window trim</span>
-														</div>
-														<div className="service-item">
-															<FontAwesomeIcon icon={faCheck} />
 															<span>And more</span>
 														</div>
 													</div>
@@ -310,10 +302,6 @@ export default function App() {
 														<div className="service-item">
 															<FontAwesomeIcon icon={faCheck} />
 															<span>Cabinet and vanity updates</span>
-														</div>
-														<div className="service-item">
-															<FontAwesomeIcon icon={faCheck} />
-															<span>Tile and finish updates</span>
 														</div>
 													</div>
 													<h5>

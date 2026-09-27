@@ -28,6 +28,7 @@ import project12 from "./assets/images/image12.jpeg";
 import project13 from "./assets/images/image13.jpeg";
 import project14 from "./assets/images/image14.jpeg";
 import project15 from "./assets/images/image15.jpeg";
+import heroVideo from "./assets/videos/herovideo.mov";
 
 const projects = [
 	{
@@ -126,314 +127,394 @@ export default function App() {
 				path="/"
 				element={
 					<div>
-						<Header />
-						<div className="divider"></div>
-						<div className="aboutcontainer">
-							{/* ABOUT */}
-							<section className="about-section">
-								<h2>ABOUT US</h2>
-								<div className="about-content">
-									<h4>
-										Based in the DFW area, our services are prominent throughout
-										Denton, where most of our projects are completed.
-										<br />
-										<br />
-										With over 25 years of experience in the renovation industry,
-										we take pride in delivering high-quality work with
-										meticulous attention to detail and reliability.
-									</h4>
-									<div className="about-highlights-wrapper">
-										<div className="about-highlight">
-											<h4>+25 years</h4>
-											<p>of experience</p>
-										</div>
-										<div className="about-highlight">
-											<h4>Dallas - Fort Worth</h4>
-											<p>and surrounding areas</p>
-										</div>
-										<div className="about-highlight">
-											<h4>Quality Work</h4>
-											<p>with attention to detail</p>
-										</div>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div className="container">
+						<div className="home-content">
+							<Header />
 							<div className="divider"></div>
-							{/* PROJECTS */}
-							<section>
-								<h2>OUR WORK</h2>
-								<h3>Scroll through our projects</h3>
-								<p>
-									From fully custom carpentry, to exterior painting, to accent
-									walls.
-								</p>
-								<div className="gallery-wrapper">
-									<div className="projects-gallery">
-										{projects.map((project, index) => (
-											<div className="project-card" key={index}>
-												<img src={project.img} alt={`Project ${index + 1}`} />
-												<div className="project-overlay">
-													<div className="project-overlay-content">
-														<h4>{project.type}</h4>
-														<ul className="project-features">
-															{project.features.map((feature, featureIndex) => (
-																<li key={featureIndex}>{feature}</li>
-															))}
-														</ul>
-													</div>
+							<div className="aboutcontainer">
+								{/* ABOUT */}
+								<section className="about-section">
+									<h2>ABOUT US</h2>
+									<div className="about-content">
+										<div className="about-copy">
+											<h4>
+												Based in the DFW area, our services are prominent
+												throughout Denton, where most of our projects are
+												completed.
+												<br />
+												<br />
+												With over 25 years of experience in the renovation
+												industry, we take pride in delivering high-quality work
+												with meticulous attention to detail and reliability.
+											</h4>
+											<div className="about-highlights-wrapper">
+												<div className="about-highlight">
+													<h4>+25 years</h4>
+													<p>of experience</p>
+												</div>
+												<div className="about-highlight">
+													<h4>Dallas - Fort Worth</h4>
+													<p>and surrounding areas</p>
+												</div>
+												<div className="about-highlight">
+													<h4>Quality Work</h4>
+													<p>with attention to detail</p>
 												</div>
 											</div>
-										))}
+										</div>
+										<div className="about-video">
+											<video
+												className="about-video__media"
+												autoPlay
+												muted
+												loop
+												playsInline
+												controls={false}
+												disablePictureInPicture
+												preload="auto"
+												aria-hidden="true"
+												tabIndex={-1}
+											>
+												<source src={heroVideo} />
+											</video>
+										</div>
 									</div>
-								</div>
-							</section>
+								</section>
+							</div>
+							<div className="container">
+								<div className="divider"></div>
+								{/* PROJECTS */}
+								<section>
+									<h2>OUR WORK</h2>
+									<h3>Scroll through our projects</h3>
+									<p>
+										From fully custom carpentry, to exterior painting, to accent
+										walls.
+									</p>
+									<div className="gallery-wrapper">
+										<div className="projects-gallery">
+											{projects.map((project, index) => (
+												<div className="project-card" key={index}>
+													<img src={project.img} alt={`Project ${index + 1}`} />
+													<div className="project-overlay">
+														<div className="project-overlay-content">
+															<h4>{project.type}</h4>
+															<ul className="project-features">
+																{project.features.map(
+																	(feature, featureIndex) => (
+																		<li key={featureIndex}>{feature}</li>
+																	),
+																)}
+															</ul>
+														</div>
+													</div>
+												</div>
+											))}
+										</div>
+									</div>
+								</section>
 
-							{/* SERVICES */}
-							<section>
-								<h2>TOP SERVICES</h2>
+								{/* SERVICES */}
+								<section>
+									<h2>TOP SERVICES</h2>
 
-								{/* CARPENTRY */}
-								<div className="service">
-									<div
-										className="service-header"
-										onClick={() => toggleService("carpentry")}
-									>
-										<FontAwesomeIcon icon={faHammer} />
-										<h4>Carpentry</h4>
-										<FontAwesomeIcon
-											icon={faChevronDown}
-											className={openService === "carpentry" ? "rotate" : ""}
-										/>
+									{/* CARPENTRY */}
+									<div className="service">
+										<div
+											className="service-header"
+											onClick={() => toggleService("carpentry")}
+										>
+											<FontAwesomeIcon icon={faHammer} />
+											<h4>Carpentry</h4>
+											<FontAwesomeIcon
+												icon={faChevronDown}
+												className={openService === "carpentry" ? "rotate" : ""}
+											/>
+										</div>
+
+										{openService === "carpentry" && (
+											<div className="service-content">
+												<div className="service-left">
+													<div className="service-list">
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Accent walls</span>
+														</div>
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Baseboard installation</span>
+														</div>
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Trim work</span>
+														</div>
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Custom bunk beds</span>
+														</div>
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Cabinets</span>
+														</div>
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Custom shelving</span>
+														</div>
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Crown molding</span>
+														</div>
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Door and window trim</span>
+														</div>
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>And more</span>
+														</div>
+													</div>
+													<h5>
+														From custom built-ins to precise trim work, we
+														deliver quality craftsmanship that elevates your
+														living space.
+													</h5>
+												</div>
+											</div>
+										)}
 									</div>
 
-									{openService === "carpentry" && (
-										<div className="service-content">
-											<div className="service-left">
+									{/* REMODELING */}
+									<div className="service">
+										<div
+											className="service-header"
+											onClick={() => toggleService("remodeling")}
+										>
+											<FontAwesomeIcon icon={faCouch} />
+											<h4>Remodeling</h4>
+											<FontAwesomeIcon
+												icon={faChevronDown}
+												className={openService === "remodeling" ? "rotate" : ""}
+											/>
+										</div>
+										{openService === "remodeling" && (
+											<div className="service-content">
+												<div className="service-left">
+													<div className="service-list">
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Bathroom remodels</span>
+														</div>
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Kitchen remodels</span>
+														</div>
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Cabinet and vanity updates</span>
+														</div>
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Tile and finish updates</span>
+														</div>
+													</div>
+													<h5>
+														Full remodels designed to improve functionality and
+														increase home value.
+													</h5>
+												</div>
+											</div>
+										)}
+									</div>
+
+									{/* FLOORING */}
+									<div className="service">
+										<div
+											className="service-header"
+											onClick={() => toggleService("flooring")}
+										>
+											<FontAwesomeIcon icon={faLayerGroup} />
+											<h4>Flooring</h4>
+											<FontAwesomeIcon
+												icon={faChevronDown}
+												className={openService === "flooring" ? "rotate" : ""}
+											/>
+										</div>
+										{openService === "flooring" && (
+											<div className="service-content">
 												<div className="service-list">
 													<div className="service-item">
 														<FontAwesomeIcon icon={faCheck} />
-														<span>Accent walls</span>
+														<span>Hardwood installation</span>
 													</div>
 													<div className="service-item">
 														<FontAwesomeIcon icon={faCheck} />
-														<span>Baseboard installation</span>
+														<span>Laminate & vinyl</span>
 													</div>
 													<div className="service-item">
 														<FontAwesomeIcon icon={faCheck} />
-														<span>Trim work</span>
+														<span>Floor replacement</span>
 													</div>
 													<div className="service-item">
 														<FontAwesomeIcon icon={faCheck} />
-														<span>Custom bunk beds</span>
-													</div>
-													<div className="service-item">
-														<FontAwesomeIcon icon={faCheck} />
-														<span>Cabinets</span>
-													</div>
-													<div className="service-item">
-														<FontAwesomeIcon icon={faCheck} />
-														<span>And more</span>
+														<span>Transitions and trim</span>
 													</div>
 												</div>
 												<h5>
-													From custom built-ins to precise trim work, we deliver
-													quality craftsmanship that elevates your living space.
+													Expert installation of premium flooring options built
+													to withstand daily life.
 												</h5>
 											</div>
-										</div>
-									)}
-								</div>
-
-								{/* REMODELING */}
-								<div className="service">
-									<div
-										className="service-header"
-										onClick={() => toggleService("remodeling")}
-									>
-										<FontAwesomeIcon icon={faCouch} />
-										<h4>Remodeling</h4>
-										<FontAwesomeIcon
-											icon={faChevronDown}
-											className={openService === "remodeling" ? "rotate" : ""}
-										/>
+										)}
 									</div>
-									{openService === "remodeling" && (
-										<div className="service-content">
-											<div className="service-left">
+
+									{/* DRYWALL */}
+									<div className="service">
+										<div
+											className="service-header"
+											onClick={() => toggleService("drywall")}
+										>
+											<FontAwesomeIcon icon={faWrench} />
+											<h4>Drywall</h4>
+											<FontAwesomeIcon
+												icon={faChevronDown}
+												className={openService === "drywall" ? "rotate" : ""}
+											/>
+										</div>
+										{openService === "drywall" && (
+											<div className="service-content">
 												<div className="service-list">
 													<div className="service-item">
 														<FontAwesomeIcon icon={faCheck} />
-														<span>Bathroom remodels</span>
+														<span>Installation & repair</span>
 													</div>
 													<div className="service-item">
 														<FontAwesomeIcon icon={faCheck} />
-														<span>Kitchen remodels</span>
+														<span>Texturing & finishing</span>
+													</div>
+													<div className="service-item">
+														<FontAwesomeIcon icon={faCheck} />
+														<span>Crack and hole patching</span>
+													</div>
+													<div className="service-item">
+														<FontAwesomeIcon icon={faCheck} />
+														<span>Seam and surface repair</span>
 													</div>
 												</div>
 												<h5>
-													Full remodels designed to improve functionality and
-													increase home value.
+													Professional repairs, seamless texturing, and clean
+													finishes for a flawless look.
 												</h5>
 											</div>
-										</div>
-									)}
-								</div>
-
-								{/* FLOORING */}
-								<div className="service">
-									<div
-										className="service-header"
-										onClick={() => toggleService("flooring")}
-									>
-										<FontAwesomeIcon icon={faLayerGroup} />
-										<h4>Flooring</h4>
-										<FontAwesomeIcon
-											icon={faChevronDown}
-											className={openService === "flooring" ? "rotate" : ""}
-										/>
+										)}
 									</div>
-									{openService === "flooring" && (
-										<div className="service-content">
-											<div className="service-list">
-												<div className="service-item">
-													<FontAwesomeIcon icon={faCheck} />
-													<span>Hardwood installation</span>
-												</div>
-												<div className="service-item">
-													<FontAwesomeIcon icon={faCheck} />
-													<span>Laminate & vinyl</span>
+
+									{/* FENCING */}
+									<div className="service">
+										<div
+											className="service-header"
+											onClick={() => toggleService("fencing")}
+										>
+											<FontAwesomeIcon icon={faLayerGroup} />
+											<h4>Fencing</h4>
+											<FontAwesomeIcon
+												icon={faChevronDown}
+												className={openService === "fencing" ? "rotate" : ""}
+											/>
+										</div>
+										{openService === "fencing" && (
+											<div className="service-content">
+												<div className="service-left">
+													<div className="service-list">
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Custom fence builds</span>
+														</div>
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Gate installation</span>
+														</div>
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Fence repair and replacement</span>
+														</div>
+														<div className="service-item">
+															<FontAwesomeIcon icon={faCheck} />
+															<span>Fence staining</span>
+														</div>
+													</div>
+													<h5>
+														High-quality perimeter solutions combining
+														structural durability with clean, modern aesthetics.
+													</h5>
 												</div>
 											</div>
-											<h5>
-												Expert installation of premium flooring options built to
-												withstand daily life.
-											</h5>
-										</div>
-									)}
-								</div>
-
-								{/* DRYWALL */}
-								<div className="service">
-									<div
-										className="service-header"
-										onClick={() => toggleService("drywall")}
-									>
-										<FontAwesomeIcon icon={faWrench} />
-										<h4>Drywall</h4>
-										<FontAwesomeIcon
-											icon={faChevronDown}
-											className={openService === "drywall" ? "rotate" : ""}
-										/>
+										)}
 									</div>
-									{openService === "drywall" && (
-										<div className="service-content">
-											<div className="service-list">
-												<div className="service-item">
-													<FontAwesomeIcon icon={faCheck} />
-													<span>Installation & repair</span>
-												</div>
-												<div className="service-item">
-													<FontAwesomeIcon icon={faCheck} />
-													<span>Texturing & finishing</span>
-												</div>
-											</div>
-											<h5>
-												Professional repairs, seamless texturing, and clean
-												finishes for a flawless look.
-											</h5>
-										</div>
-									)}
-								</div>
 
-								{/* FENCING */}
-								<div className="service">
-									<div
-										className="service-header"
-										onClick={() => toggleService("fencing")}
-									>
-										<FontAwesomeIcon icon={faLayerGroup} />
-										<h4>Fencing</h4>
-										<FontAwesomeIcon
-											icon={faChevronDown}
-											className={openService === "fencing" ? "rotate" : ""}
-										/>
-									</div>
-									{openService === "fencing" && (
-										<div className="service-content">
-											<div className="service-left">
+									{/* ADDITIONAL / MISC */}
+									<div className="service">
+										<div
+											className="service-header"
+											onClick={() => toggleService("additional")}
+										>
+											<FontAwesomeIcon icon={faHammer} />
+											<h4>Additional Services</h4>
+											<FontAwesomeIcon
+												icon={faChevronDown}
+												className={openService === "additional" ? "rotate" : ""}
+											/>
+										</div>
+										{openService === "additional" && (
+											<div className="service-content">
 												<div className="service-list">
 													<div className="service-item">
 														<FontAwesomeIcon icon={faCheck} />
-														<span>Custom fence builds</span>
+														<span>Decks, porches & more</span>
 													</div>
 													<div className="service-item">
 														<FontAwesomeIcon icon={faCheck} />
-														<span>Gate installation</span>
+														<span>Interior and exterior painting</span>
+													</div>
+													<div className="service-item">
+														<FontAwesomeIcon icon={faCheck} />
+														<span>Exterior updates</span>
+													</div>
+													<div className="service-item">
+														<FontAwesomeIcon icon={faCheck} />
+														<span>Custom project requests</span>
 													</div>
 												</div>
-												<h5>
-													High-quality perimeter solutions combining structural
-													durability with clean, modern aesthetics.
-												</h5>
+												<h5>Ask us about any project — we can usually help.</h5>
 											</div>
-										</div>
-									)}
-								</div>
-
-								{/* ADDITIONAL / MISC */}
-								<div className="service">
-									<div
-										className="service-header"
-										onClick={() => toggleService("additional")}
-									>
-										<FontAwesomeIcon icon={faHammer} />
-										<h4>Additional Services</h4>
-										<FontAwesomeIcon
-											icon={faChevronDown}
-											className={openService === "additional" ? "rotate" : ""}
-										/>
+										)}
 									</div>
-									{openService === "additional" && (
-										<div className="service-content">
-											<div className="service-list">
-												<div className="service-item">
-													<FontAwesomeIcon icon={faCheck} />
-													<span>Decks, porches & more</span>
-												</div>
-											</div>
-											<h5>Ask us about any project — we can usually help.</h5>
-										</div>
-									)}
-								</div>
-							</section>
-							<div className="divider"></div>
-							{/* CONTACT */}
-							<div className="footer">
-								<h3>ALCALA'S RENOVATIONS</h3>
-								<p>Dallas - Fort Worth</p>
-								<p>Phone: (940) 206-3588</p>
-								<p>Email: alcalasrenovations@gmail.com</p>
+								</section>
+								<div className="divider"></div>
+								{/* CONTACT */}
+								<div className="footer">
+									<h3>ALCALA'S RENOVATIONS</h3>
+									<p>Dallas - Fort Worth</p>
+									<p>Phone: (940) 206-3588</p>
+									<p>Email: alcalasrenovations@gmail.com</p>
 
-								{/* Social Icons */}
-								<div className="social-icons">
-									<a
-										href="https://www.instagram.com/alcalasrenovations?igsh=MXVhbnFwZjZ6NDdtcw=="
-										target="_blank"
-										rel="noopener noreferrer"
-										aria-label="Instagram"
-									>
-										<FontAwesomeIcon icon={faInstagram} />
-									</a>
-									<a
-										href="https://www.facebook.com/share/17DnKmZdat/?mibextid=wwXIfr"
-										target="_blank"
-										rel="noopener noreferrer"
-										aria-label="Facebook"
-									>
-										<FontAwesomeIcon icon={faFacebook} />
-									</a>
+									{/* Social Icons */}
+									<div className="social-icons">
+										<a
+											href="https://www.instagram.com/alcalasrenovations?igsh=MXVhbnFwZjZ6NDdtcw=="
+											target="_blank"
+											rel="noopener noreferrer"
+											aria-label="Instagram"
+										>
+											<FontAwesomeIcon icon={faInstagram} />
+										</a>
+										<a
+											href="https://www.facebook.com/share/17DnKmZdat/?mibextid=wwXIfr"
+											target="_blank"
+											rel="noopener noreferrer"
+											aria-label="Facebook"
+										>
+											<FontAwesomeIcon icon={faFacebook} />
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
